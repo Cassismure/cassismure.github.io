@@ -845,25 +845,25 @@
 </footer>
 
 <script>
-/* ===== Edit this block to update your site ===== */
+/* ======================= */
 const SITE = {
   email: "okeleyetomilola@gmail.com",
   github: "https://github.com/Cassismure",
   linkedin: "https://www.linkedin.com/in/tomilolaiscassis157",
-  cvUrl: ""       // link to your CV PDF
+  cvUrl: "OkeleyeTomilolaCV.pdf"
 };
 const PROJECTS = [
-  // { title:"Project name", description:"What it does and what you learned.", tags:["Python","Biopython"], link:"https://...", repo:"https://github.com/..." }
+    { title:"DNA Sequence Analysis & Visualization", description:"A Python-based pipeline to analyze DNA sequences, calculate GC content, store analytical results in SQL, and generate visualizations to explore sequence characteristics.", tags:["Python","Biopython","SQL"], link:"", repo:"https://github.com/Cassismure/dna_sequence_analysis.git" }
 ];
-// Each box in "Beyond code" opens its own page. Add pieces to the lists below.
 // Drawings, crafts, visual: { src:"image-url-or-data-uri", caption:"Title" }
 // Writing: { title:"Title", text:"Your writing. Leave a blank line between paragraphs." }
 const BEYOND = {
   drawing: { title:"Drawings", blurb:"Sketches and illustrations, I'm just a traditional artist", tone:"lav", items:[
     { src:"images/glasses.jpg", caption:"Portrait with glasses" },
     { src:"images/bow.jpg", caption:"Girl with a bow" },
-    { src:"images/garden.jpg", caption:"Resting in the trees" },
-    { src:"images/couple.jpg", caption:"Two figures" }
+    { src:"images/garden.jpg", caption:"A girl resting in the trees" },
+    { src:"images/couple.jpg", caption:"Two figures" },
+    { src:"images/eyes.jpg", caption:"Sketches" }
   ] },
   writing: { title:"Writing", blurb:"Short pieces and snippets", tone:"mint", items:[] },
   research:  { title:"Research", blurb:"Exploring ideas and concepts", tone:"peach", items:[] },
@@ -945,7 +945,7 @@ menu.addEventListener("click",e=>{if(e.target.closest("a"))setMenu(false)});
 addEventListener("keydown",e=>{if(e.key==="Escape")setMenu(false)});
 matchMedia("(min-width:721px)").addEventListener("change",e=>{if(e.matches)setMenu(false)});
 
-// Theme toggle (kept in memory only)
+// Theme toggle
 const root=document.documentElement;
 document.getElementById("theme").addEventListener("click",()=>{
   const dark=getComputedStyle(root).getPropertyValue("--bg").trim()==="#1c1a28";
